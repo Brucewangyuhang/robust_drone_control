@@ -70,8 +70,8 @@ All visualizations below use the original project's nominal start state, `x=0.4,
 ### Moderate Disturbance: `magnitude=0.35`
 
 <p float="left">
-  <img src="safe-control-gym-main/examples/rl/results/original_project_start_original_vs_multistart_wide_seed10/evals/plots/native_trajectory_ppo_model_quadrotor_3D_track_mag_0p35.png" alt="Original strict-tracking PPO under disturbance magnitude 0.35" width="49%">
-  <img src="safe-control-gym-main/examples/rl/results/original_project_start_original_vs_multistart_wide_seed10/evals/plots/trajectory_model_latest_mag_0p35.png" alt="Multi-start robust path-following PPO under disturbance magnitude 0.35" width="49%">
+  <img src="assets/readme/original_ppo_mag_0p35.png" alt="Original strict-tracking PPO under disturbance magnitude 0.35" width="49%">
+  <img src="assets/readme/robust_multistart_mag_0p35.png" alt="Multi-start robust path-following PPO under disturbance magnitude 0.35" width="49%">
 </p>
 
 At `magnitude=0.35`, the original PPO still follows the strict time-indexed tracking objective, but its tracking error increases after the disturbance. The multi-start robust PPO maintains high path progress and coverage and continues completing the figure-eight path.
@@ -79,8 +79,8 @@ At `magnitude=0.35`, the original PPO still follows the strict time-indexed trac
 ### Medium-high Disturbance: `magnitude=0.50`
 
 <p float="left">
-  <img src="safe-control-gym-main/examples/rl/results/original_project_start_high_impulse_original_vs_multistart_wide_seed10/evals/plots/native_trajectory_ppo_model_quadrotor_3D_track_mag_0p50.png" alt="Original strict-tracking PPO under disturbance magnitude 0.50" width="49%">
-  <img src="safe-control-gym-main/examples/rl/results/original_project_start_high_impulse_original_vs_multistart_wide_seed10/evals/plots/trajectory_model_latest_mag_0p50.png" alt="Multi-start robust path-following PPO under disturbance magnitude 0.50" width="49%">
+  <img src="assets/readme/original_ppo_mag_0p50.png" alt="Original strict-tracking PPO under disturbance magnitude 0.50" width="49%">
+  <img src="assets/readme/robust_multistart_mag_0p50.png" alt="Multi-start robust path-following PPO under disturbance magnitude 0.50" width="49%">
 </p>
 
 At `magnitude=0.50`, the original PPO further degrades in return and RMSE. The proposed model still achieves `progress=0.983`, `coverage=0.926`, and `completion=1.00`, showing that the multi-start and disturbance curriculum are effective in the moderate disturbance range.
@@ -88,8 +88,8 @@ At `magnitude=0.50`, the original PPO further degrades in return and RMSE. The p
 ### Robustness Boundary: `magnitude=1.00`
 
 <p float="left">
-  <img src="safe-control-gym-main/examples/rl/results/original_project_start_high_impulse_original_vs_multistart_wide_seed10/evals/plots/native_trajectory_ppo_model_quadrotor_3D_track_mag_1p00.png" alt="Original strict-tracking PPO under disturbance magnitude 1.00" width="49%">
-  <img src="safe-control-gym-main/examples/rl/results/original_project_start_high_impulse_original_vs_multistart_wide_seed10/evals/plots/trajectory_model_latest_mag_1p00.png" alt="Multi-start robust path-following PPO under disturbance magnitude 1.00" width="49%">
+  <img src="assets/readme/original_ppo_mag_1p00.png" alt="Original strict-tracking PPO under disturbance magnitude 1.00" width="49%">
+  <img src="assets/readme/robust_multistart_mag_1p00.png" alt="Multi-start robust path-following PPO under disturbance magnitude 1.00" width="49%">
 </p>
 
 At `magnitude=1.00`, the proposed policy's completion rate drops to `0.20`. This shows that the policy is not universally robust; instead, it reaches a clear capability boundary under stronger disturbances. This also motivates future work on broader disturbance curricula, stronger recovery objectives, or improved policy architectures.
