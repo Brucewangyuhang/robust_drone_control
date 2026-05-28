@@ -1,0 +1,39 @@
+# Project-specific temporary files
+results/
+temp-data/
+
+# acados
+c_generated_code/
+acados_*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments (venv, virtualenv, etc.)
+venv/
+env/
+.venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# Testing
+.pytest_cache/
+
+# Editors
+.vscode/
+.cursor/
+
+# OS
+.DS_Store

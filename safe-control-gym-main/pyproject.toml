@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "safe-control-gym"
+version = "2.0.0"
+description = "PyBullet CartPole and Quadrotor environments—with CasADi symbolic a priori dynamics—for learning-based control and RL"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.10"
+munch = "^4.0"
+PyYAML = "^6.0"
+imageio = "^2.37"
+dict-deep = "^4.1"
+scikit-optimize = "^0.10"
+scikit-learn = "^1.7"
+gymnasium = "^0.28"
+torch = "^2.8"
+gpytorch = "^1.14"
+tensorboard = "^2.20"
+casadi = "^3.7"
+pybullet = "^3.2"
+numpy = "^2.2"
+cvxpy = "^1.7"
+pycddlib = "^2.1"
+pytope = "^0.0.4"
+Mosek = "^11.0"
+termcolor = "^3.1"
+pytest = "^8.4"
+pre-commit = "^4.3"
+optuna = "^3.0"
+optuna-dashboard = "^0.9"
+mysql-connector-python = "8.0.33"
+pymysql = "1.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
